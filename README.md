@@ -1,3 +1,4 @@
+
 Spring MVC Showcase
 -------------------
 Demonstrates the capabilities of the Spring MVC web framework through small, simple examples.
@@ -27,11 +28,11 @@ Clone the repository:
 If this is your first time using Github, review http://help.github.com to learn the basics.
 
 To run the application:
--------------------	
+-------------------
 From the command line with Maven:
 
     $ cd spring-mvc-showcase
-    $ mvn tomcat7:run [-Dmaven.tomcat.port=<port no.>] (In case 8080 is busy] 
+    $ mvn tomcat7:run [-Dmaven.tomcat.port=<port no.>] (In case 8080 is busy]
 
 or
 
