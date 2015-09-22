@@ -255,7 +255,7 @@
 						<exclude>**/Abstract*.java</exclude>
 					</excludes>
 					<junitArtifactName>junit:junit</junitArtifactName>
-					<argLine>-Xmx512m</argLine>
+					<argLine>-Xmx512m ${argLine}</argLine>
 				</configuration>
 			</plugin>
 			<plugin>
