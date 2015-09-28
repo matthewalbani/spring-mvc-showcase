@@ -35,7 +35,8 @@ public class FormControllerTests {
 
 	@Test
 	public void submitSuccess() throws Exception {
-		String timezone = getTimezone(1941, 12, 16); 
+    Thread.sleep(10000);
+		String timezone = getTimezone(1941, 12, 16);
 		this.mockMvc.perform(
 				post("/form")
 					.param("name", "Joe")
@@ -63,7 +64,7 @@ public class FormControllerTests {
 
 	@Test
 	public void submitSuccessAjax() throws Exception {
-		String timezone = getTimezone(1941, 12, 16); 
+		String timezone = getTimezone(1941, 12, 16);
 		this.mockMvc.perform(
 				post("/form")
 					.header("X-Requested-With", "XMLHttpRequest")
@@ -99,7 +100,7 @@ public class FormControllerTests {
 				.andExpect(model().errorCount(2))
 				.andExpect(model().attributeHasFieldErrors("formBean", "name", "age"));
 	}
-	
+
 	private String getTimezone(int year, int month, int day)
 	{
 		Calendar calendar = Calendar.getInstance();
