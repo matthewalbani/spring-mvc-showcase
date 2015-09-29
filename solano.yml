@@ -11,8 +11,6 @@ cache:
     - HOME/.m2
 tests:
   - type: junit
-    command: 
-      -mvn test
-      -mvn verify
+    command: mvn test
     report_files:
     - "target/surefire-reports/*.xml"
