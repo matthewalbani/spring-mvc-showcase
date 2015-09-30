@@ -230,6 +230,22 @@
                         <goal>report</goal>
                     </goals>
                 </execution>
+                 <execution>
+            <id>merge</id>
+            <goals>
+              <goal>merge</goal>
+            </goals>
+            <configuration>
+              <fileSets>
+                <fileSet implementation="org.apache.maven.shared.model.fileset.FileSet">
+                  <directory>${project.parent.build.directory}</directory>
+                  <includes>
+                    <include>*.exec</include>
+                  </includes>
+                </fileSet>
+              </fileSets>
+            </configuration>
+          </execution>
             </executions>
         </plugin>
 
