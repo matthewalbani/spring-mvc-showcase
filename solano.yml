@@ -18,6 +18,6 @@ tests:
     output: exit-status
     files:
     - include: 'test/*Test.java'
-    command: "bin/solano-runner"
+    command: bin/solano-runner
     report_files:
     - "target/surefire-reports/*.xml"
