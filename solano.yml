@@ -14,10 +14,6 @@ cache:
     - HOME/.m2
 tests:
   - type: junit
-    mode: parallel
-    output: exit-status
-    files:
-    - include: 'test/*Test.java'
-    command: bin/solano-runner
+    command: mvn test
     report_files:
     - "target/surefire-reports/*.xml"
