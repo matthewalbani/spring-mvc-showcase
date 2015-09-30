@@ -31,4 +31,3 @@ tests:
   - mvn test -Dtest=ValidationControllerTests
   - mvn test -Dtest=SimpleControllerRevisitedTests
   - mvn test -Dtest=ViewsControllerTests
-  - mvn test -Dtest=AbstractContextControllerTests
