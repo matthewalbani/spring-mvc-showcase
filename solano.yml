@@ -4,9 +4,8 @@ java:
   maven_version: '3.0.5'  # 2.0, 3.0, 3.1, and 3.2
 coverage:
   version: 2
-  merge_command: mvn jacoco:merge #mvn ant
-  report_command: mvn jacoco:report #mvn ant
-  #merge_path: #if not provided do a default
+  merge_command: mvn jacoco:merge
+  report_command: mvn jacoco:report
 cache:
   key_paths:
     - pom.xml
@@ -14,10 +13,6 @@ cache:
     - HOME/.m2
 tests:
   - type: junit
-    mode: parallel
-    output: exit-status
-    files:
-    - include: 'test/*Test.java'
-    command: "bin/solano-runner"
+    command: mvn test
     report_files:
     - "target/surefire-reports/*.xml"
