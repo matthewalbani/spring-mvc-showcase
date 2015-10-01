@@ -217,6 +217,19 @@
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.7.0.201403182114</version>
+            <configuration>
+    <fileSets>
+      <!-- Implementation attribute not needed in Maven 3 -->
+      <fileSet implementation="org.apache.maven.shared.model.fileset.FileSet">
+        <directory>${project.build.directory}/</directory>
+          <includes>
+            <include>*.exec</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+      <!-- File containing the merged data -->
+      <destFile>${project.build.directory}/jacoco.exec</destFile>
+    </configuration>
             <executions>
                 <execution>
                     <goals>
