@@ -13,21 +13,4 @@ cache:
   save_paths:
     - HOME/.m2
 tests:
-  - mvn test -Dtest=CallableControllerTests
-  - mvn test -Dtest=DeferredResultControllerTests
-  - mvn test -Dtest=ConvertControllerTests
-  - mvn test -Dtest=CustomArgumentControllerTests
-  - mvn test -Dtest=DataControllerTests
-  - mvn test -Dtest=StandardArgumentsControllerTests
-  - mvn test -Dtest=ExceptionControllerTests
-  - mvn test -Dtest=FileUploadControllerTests
-  - mvn test -Dtest=FormControllerTests
-  - mvn test -Dtest=MappingControllerTests
-  - mvn test -Dtest=MessageConvertersControllerTests
-  - mvn test -Dtest=RedirectControllerTests
-  - mvn test -Dtest=ResponseControllerTests
-  - mvn test -Dtest=SimpleControllerRevisitedTests
-  - mvn test -Dtest=SimpleControllerTests
-  - mvn test -Dtest=ValidationControllerTests
-  - mvn test -Dtest=SimpleControllerRevisitedTests
-  - mvn test -Dtest=ViewsControllerTests
+  - mvn test
